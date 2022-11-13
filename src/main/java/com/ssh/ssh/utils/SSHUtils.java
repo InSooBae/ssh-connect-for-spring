@@ -16,10 +16,10 @@ import com.jcraft.jsch.SftpProgressMonitor;
 
 @Component
 public class SSHUtils {
-    private final String username = "j7a603";
-    private final String host = "cluster.p.ssafy.io";
+    private final String username = "ubuntu"; // input usename
+    private final String host = "host"; // input host name
     private final int port = 22;
-    private final String pwdPath = "/home/ubuntu/pemkey/J5D205T.pem";
+    private final String pwdPath = "/home/ubuntu/pemkey/"; // input *.pem file
 
     private static Session session;
     private ChannelExec channelExec = null;
